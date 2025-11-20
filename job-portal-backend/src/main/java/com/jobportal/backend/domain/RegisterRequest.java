@@ -1,15 +1,19 @@
 package com.jobportal.backend.domain;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class RegisterRequest {
-
-	private String username;
-	private String email;
-	private String password;
+    private String name;
+    private String email;
+    private String password;
+    private String phone;
+    private String skills;
+    private String summary;
+    private String resume;
+    private List<ExperienceDTO> experience;
+    private String profilePicture;
+    private String role; // USER or ADMIN (for testing; in production create admins separately)
 }

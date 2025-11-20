@@ -1,0 +1,17 @@
+package com.jobportal.backend.domain;
+
+import java.time.LocalDate;
+
+import lombok.Data;
+
+@Data
+public class JobRequest {
+
+	private String title;
+	private String company;
+	private String location;
+	private String description;
+	private LocalDate postedDate;
+	private LocalDate lastDateToApply;
+	private String salary;
+}
